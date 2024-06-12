@@ -1,0 +1,150 @@
+@font-face {
+    font-family: popreg;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: popsbold;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: popbold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+body{
+    background-color: #191919;
+    /* background-image: url(ui2.png); */
+    background-size: cover;
+    color: white;
+}
+.header{
+    color: white;
+    font-family: popreg;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.blue{
+    background-color: aqua;
+}
+#timer{
+    font-family: popsbold;
+    font-size: 40px;
+}
+.timer{
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    height: 85px;
+}
+.timer-btn{
+    border-radius: 50%;
+    height: 63px;
+    width: 63px;
+}
+.sideicon{
+    padding-left: 40px;
+    margin-right: 30px;
+    font-size: 24px;
+}
+.todoinput{
+    flex: 1;
+    background: transparent;
+    border: none;                                               /*css for input box*/
+    outline: none;                                              
+    height: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.todobtn{
+    border: none;
+    right: 0;
+    outline: none;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 252, 252);                               /*css for 'add' button*/
+    cursor: pointer;
+    height: 28px;
+    width: 56px;
+    transition: 0.5s;
+    font-family: popreg;
+}
+.done{
+    color: rgb(67, 97, 97);
+    text-decoration: line-through;                                  /*css for task marked done*/
+}
+.done::before{
+    content: '';
+    background-image: url(check.svg);                               /*image for task marked done*/
+}
+#list-container li{
+    font-family: popreg;
+    /* list-style:none; */
+    cursor: pointer;
+    padding-top: 2px; 
+    user-select: none;
+    text-align: left;                                               /*css for task list items*/
+    position: relative;
+    transition: 0.5s;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    color: aliceblue;
+    padding-right: 30px;
+}
+#list-container span{
+    /* right: 19px; */
+    right: 0px;
+    top: 5px;
+    text-align: center;
+    position: absolute;
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    line-height: 18px;
+    border: 2px solid rgb(255, 255, 255);  
+    color: rgb(255, 255, 255);     /*'delete' button border*/
+}
+.col-3 p{
+    font-family: popreg;
+}
+.tasks{
+    background-color: rgb(44, 44, 44);
+    border-radius: 20px;
+}
+.tasks p{
+    padding: 20px;
+    font-family: popsbold;
+    font-size: 20px;
+}
+#list-container{
+    overflow-y: scroll;
+    height: 3000px;
+    max-height: 256px;
+}
+.notehead{
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: popbold;
+}
+.bo p{
+    font-family: popbold;
+    font-size: 22px;
+}
+.bo{
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 20px;
+    margin-top: 24px;
+    padding: 20px;
+}
+.bo a{
+    text-decoration: none;
+    color: white;
+}
+.bo ul{
+    list-style: none;
+}
+.currpage{
+    background-color: rgb(44, 44, 44);
+    border-radius: 20px;
+}

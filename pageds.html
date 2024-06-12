@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>SWAN</title>
+</head>
+<body>
+    <div class="header"><p>SWAN</p></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 ">
+                <p class="currpage"><i class="uil uil-books sideicon "></i>Notes</p>
+                <p><i class="uil uil-file-exclamation sideicon"></i>Repository</p>
+                <br>
+                <div class="timer">
+                    <div class="timer-part"> <div id="timer"><button type="button" class="timer-btn timer-play" onclick="startTimer()"><i class="uil uil-play"></i></button></div></div>
+                </div>
+                <br>
+                <div class="tasks">
+                    <div class="to-do-div">
+                        <p>Tasks</p>
+                        <div class="row-1">
+                            <input type="text" id="input" placeholder="Add Your Task" class="todoinput">
+                            <button onclick=addtask() class="todobtn">ADD</button>
+                        </div>
+                        <ul id="list-container">
+                            <!-- <li class="done" id="list-item">Ask </li>
+                            <li id="list-item">Ask </li>
+                            <li id="list-item">Ask </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="sub-1 bo">
+                    <p>Data Structures</p>
+                    <ul class="bocl">
+                        <li><a href="https://drive.google.com/drive/folders/1HOHdqpywVelFfRqsYoiRGtXr3r8Ty8by?usp=drive_link">Unit-1: Arrays, Linked Lists</a></li>
+                                <li><a href="https://drive.google.com/drive/folders/1AjAXdFQKZMNJnqTGqXOH3SAbNUBTGmLO?usp=drive_link">Unit-2: Stacks and Queues</a></li>
+                                <li><a href="https://drive.google.com/drive/folders/1ikHtpDRpxWZqjICr40zGantKNU-08uLK?usp=drive_link">Unit-3: Searching and Sorting</a></li>
+                                <li><a href="https://drive.google.com/file/d/10rpgsLHHeHMOHdR42IICVlUWWXbAcQqp/view?usp=drive_link">Unit-4: Trees</a></li>
+                                <li><a href="https://drive.google.com/file/d/1fpyPAvWprN1c6haYiI-fQ8VmYKpPMvEO/view?usp=drive_link">Unit-5: Graphs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tasks.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>SWAN</title>
+</head>
+<body>
+    <div class="header"><p>SWAN</p></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 ">
+                <p class="currpage"><i class="uil uil-books sideicon "></i>Notes</p>
+                <p><i class="uil uil-file-exclamation sideicon"></i>Repository</p>
+                <br>
+                <div class="timer">
+                    <div class="timer-part"> <div id="timer"><button type="button" class="timer-btn timer-play" onclick="startTimer()"><i class="uil uil-play"></i></button></div></div>
+                </div>
+                <br>
+                <div class="tasks">
+                    <div class="to-do-div">
+                        <p>Tasks</p>
+                        <div class="row-1">
+                            <input type="text" id="input" placeholder="Add Your Task" class="todoinput">
+                            <button onclick=addtask() class="todobtn">ADD</button>
+                        </div>
+                        <ul id="list-container">
+                            <!-- <li class="done" id="list-item">Ask </li>
+                            <li id="list-item">Ask </li>
+                            <li id="list-item">Ask </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="sub-1 bo">
+                    <p>Maths</p>
+                    <ul class="bocl">
+                        <li><a href="https://youtu.be/14bNduEh9ag?list=PL5Dqs90qDljXYjZ8kDHtpMqPGKNGb2dxu">Unit-1: Partial Diffrential Equation</a></li>
+                                <li><a href="https://youtu.be/8nmqu-f5VOM?list=PL5Dqs90qDljXzMS_nQYRxqCnNlwlEtE1_">Unit-2: Applications of PDE</a></li>
+                                <li><a href="https://youtu.be/CJz2F7o4MMM?list=PL5Dqs90qDljVF5-HxU829qWUMRFwDAu3v">Unit-3: Statistics-I</a></li>
+                                <li><a href="https://youtu.be/hDJBXWaXooU?list=PL5Dqs90qDljWiE0fK-akBQXH2yp2OWXVr">Unit-4: Statistics-II</a></li>
+                                <li><a href="https://youtu.be/Ay1wckoASTI?list=PL5Dqs90qDljWze2qPIgZv-CtBJYHEIvqa">Unit-5: Statistics-III</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tasks.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
